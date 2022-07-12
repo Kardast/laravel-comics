@@ -70,6 +70,70 @@ body {
   background-size: cover;
 }
 
+.content {
+  width: 100wh;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+}
+
+.content .container {
+  width: 80%;
+  height: 100%;
+  color: white;
+}
+
+.content .container .series {
+  height: 50px;
+  position: relative;
+}
+
+.content .container .series h2 {
+  background-color: #0282f9;
+  padding: 10px 40px;
+  display: inline-block;
+  position: absolute;
+  top: -25px;
+}
+
+.content .container .comics-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 87%;
+  margin: 0 auto;
+}
+
+.content .container .comics-container .comics-card {
+  margin: 5px 10px;
+}
+
+.content .container .comics-container .comics-card img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.content .container .comics-container .comics-card h4 {
+  width: 150px;
+  margin: 15px 0;
+}
+
+.content .container .load-b {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.content .container .load-b a {
+  text-decoration: none;
+  color: white;
+  background-color: #0282f9;
+  padding: 10px 40px;
+}
+
 .bluepart {
   width: 100wh;
   background-color: #0282f9;
