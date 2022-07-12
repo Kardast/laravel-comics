@@ -18,5 +18,7 @@
     @include('partials.bluePart')
 
     @include('partials.footer')
+
+    @include('partials.footerLow')
 </body>
 </html>
