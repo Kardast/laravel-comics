@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
 .navbar {
   width: 100wh;
   height: 120px;

@@ -15,7 +15,7 @@
 
                 @foreach ($arrLinks as $link)
                     <li>
-                        <a href="{{ route($link['url']) }}">{{ $link['text'] }}</a>
+                        <a href="{{ $link['url'] }}">{{ $link['text'] }}</a>
                     </li>
                 @endforeach
 
