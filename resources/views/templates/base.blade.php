@@ -15,6 +15,8 @@
 
     @yield('pageMain')
 
+    @include('partials.bluePart')
+
     @include('partials.footer')
 </body>
 </html>
