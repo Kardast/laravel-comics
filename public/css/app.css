@@ -62,3 +62,11 @@ body {
   color: rgb(0, 110, 255);
 }
 
+.jumbotron {
+  width: 100wh;
+  height: 400px;
+  background-image: url("/img/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
