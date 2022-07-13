@@ -33,11 +33,13 @@ Route::get('/product/{id}', function ($id) {
     if ($card) {
         return view('product', [
             'comics'     => $card,
+            'arrDComics' => config('dcomics'),
         ]);
     } else {
         abort(404);
     }
 })->name('product');
+
 // <a href="{{route('comic')}}">Prodotti</a>
 
 // return view('product', [
