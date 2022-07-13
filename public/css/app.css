@@ -14,13 +14,11 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .navbar .container {
   width: 80%;
   height: 100%;
   display: flex;
 }
-
 .navbar .container .logo {
   height: 100%;
   width: 40%;
@@ -28,11 +26,9 @@ body {
   align-items: center;
   padding-left: 15px;
 }
-
 .navbar .container .logo img {
   width: 80px;
 }
-
 .navbar .container .navlist {
   width: 60%;
   list-style: none;
@@ -40,11 +36,9 @@ body {
   align-items: center;
   justify-content: end;
 }
-
 .navbar .container .navlist li {
   margin: 0 5px;
 }
-
 .navbar .container .navlist li a {
   color: black;
   text-decoration: none;
@@ -52,11 +46,9 @@ body {
   font-size: 13px;
   font-weight: bold;
 }
-
 .navbar .container .navlist li a:hover {
   color: violet;
 }
-
 .navbar .container .navlist li a.here {
   border-bottom: 8px solid rgb(0, 110, 255);
   color: rgb(0, 110, 255);
@@ -76,18 +68,15 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .content .container {
   width: 80%;
   height: 100%;
   color: white;
 }
-
 .content .container .series {
   height: 50px;
   position: relative;
 }
-
 .content .container .series h2 {
   background-color: #0282f9;
   padding: 10px 40px;
@@ -95,18 +84,19 @@ body {
   position: absolute;
   top: -25px;
 }
-
 .content .container .comics-container {
   display: flex;
   flex-wrap: wrap;
   width: 87%;
   margin: 0 auto;
 }
-
+.content .container .comics-container a {
+  text-decoration: none;
+  color: white;
+}
 .content .container .comics-container .comics-card {
   margin: 5px 10px;
 }
-
 .content .container .comics-container .comics-card img {
   width: 200px;
   height: 200px;
@@ -115,18 +105,15 @@ body {
   -o-object-position: top;
      object-position: top;
 }
-
 .content .container .comics-container .comics-card h4 {
   width: 150px;
   margin: 15px 0;
 }
-
 .content .container .load-b {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
 }
-
 .content .container .load-b a {
   text-decoration: none;
   color: white;
@@ -141,7 +128,6 @@ body {
   justify-content: center;
   height: 140px;
 }
-
 .bluepart .container {
   width: 80%;
   height: 100%;
@@ -149,18 +135,15 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-
 .bluepart .container li {
   list-style: none;
 }
-
 .bluepart .container .small-container {
   display: flex;
   align-items: center;
   color: white;
   font-size: 14px;
 }
-
 .bluepart .container .small-container img {
   width: 40px;
   height: 55px;
@@ -176,39 +159,32 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .footer .container {
   width: 80%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-
 .footer .container .f-links {
   width: 60%;
   display: flex;
   color: white;
 }
-
 .footer .container .f-links ul {
   margin-right: 20px;
 }
-
 .footer .container .f-links h3 {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-
 .footer .container .f-links li {
   list-style: none;
 }
-
 .footer .container .f-links li a {
   text-decoration: none;
   color: grey;
   font-size: 12px;
 }
-
 .footer .container .f-pic {
   width: 40%;
   height: 100%;
@@ -217,7 +193,6 @@ body {
   align-items: center;
   overflow: hidden;
 }
-
 .footer .container .f-pic img {
   width: 90%;
 }
@@ -229,43 +204,35 @@ body {
   height: 100px;
   background-color: #303030;
 }
-
 .footer_low .container {
   width: 80%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-
 .footer_low .container .button {
   width: 20%;
 }
-
 .footer_low .container .button a {
   color: white;
   text-decoration: none;
   border: 2px solid #0282f9;
   padding: 10px;
 }
-
 .footer_low .container .socials {
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: end;
 }
-
 .footer_low .container .socials h3 {
   margin-right: 20px;
   color: #0282f9;
 }
-
 .footer_low .container .socials ul {
   display: flex;
 }
-
 .footer_low .container .socials ul li {
   list-style: none;
   margin: 5px;
 }
-

@@ -13,11 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('home', [
-        'arrComics'  => config('comics'),
-        'arrLinks' => config('links'),
-        'arrShop' => config('shop'),
         'arrDComics' => config('dcomics'),
-    ]);
+    ]
+);
 });
+
+Route::get('/product/{id}', function ($id) {
+    $card = null;
+    foreach (config('comics') as $value) {
+        if ($value['id'] == $id) {
+            $card = $value;
+            break;
+        }
+    }
+
+    if ($card) {
+        return view('product', [
+            'comics'     => $card,
+        ]);
+    } else {
+        abort(404);
+    }
+})->name('product');
+// <a href="{{route('comic')}}">Prodotti</a>
+
+// return view('product', [
+//     'arrDComics' => config('dcomics'),
+// ]
+// );

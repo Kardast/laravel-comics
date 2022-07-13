@@ -17,14 +17,16 @@
               <div class="comics-container">
 
                 <!-- qui ci va il tag che ti crei nel componente -->
-                {{-- <ComicsCard v-for="(cardiesimo, index) in cards" :key="index" :details="cardiesimo" /> --}}
-                @foreach ($arrComics as $card)
+                @foreach (config('comics') as $card)
 
-                    <div class="comics-card">
+                    <a href="{{route('product', ['id' => $card['id']]) }}">
 
-                        <img src="{{ $card['thumb'] }}" alt="{{ $card['series'] }}">
-                        <h4>{{ $card['series'] }}</h4>
-                    </div>
+                        <div class="comics-card">
+
+                            <img src="{{ $card['thumb'] }}" alt="{{ $card['series'] }}">
+                            <h4>{{ $card['series'] }}</h4>
+                        </div>
+                    </a>
                 @endforeach
               </div>
 
